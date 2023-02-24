@@ -1,0 +1,183 @@
+body {
+	font-family: Helvetica;
+	background-color: #EAFDFC;
+  margin: 0;
+  padding: 0;
+}
+
+body:hover{
+	background-color: #AEE2FF;
+	transition: background-color 1s ease;
+}
+
+a{
+	color:#144272;
+	margin: 0 auto;
+	text-decoration: none;
+	transition: color 1s ease;
+}
+
+a:hover {
+	color: #2C74B3;
+	text-decoration: none;
+}
+
+
+h1, h3{
+	color: #144272;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+h1:hover, h3:hover{
+	color: #2C74B3;
+	transition: color 1s ease;
+}
+
+p{
+	color:#2C74B3;
+	font-weight: normal;
+}
+
+p:hover{
+	transition: color 1s ease;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .profile {
+  	align-items: center;
+  }
+}
+
+.card{
+	padding: 25px;
+	margin: 50px 0px;
+	border-radius: 5px;
+	box-shadow: 0 10px 30px lightgrey;
+	background-color:#BFEAF5;
+	font-weight: 600;
+	text-align: center;
+  height: 100%;
+}
+
+.card:hover{
+	background-color: #7286D3;
+	transition: background-color 3s ease;
+}
+
+.btn-blue{
+	background-color: #8EA7E9;
+	color: #0A2647;
+	padding: 30px 15px;
+	border-radius: 5px;
+	margin-bottom: 80px;
+}
+
+.btn-blue:hover{
+	background-color: #144272;
+	color: white;
+	transition: background-color 2s ease;
+}
+
+.list-inline{
+	list-style: none;
+	padding-left: 0px;
+}
+
+.list-inline li{
+	display: inline;
+	padding: 10px;
+	padding-inline: auto;
+}
+
+#first-class{
+	padding: 80px;
+}
+
+#text-first{
+	font-size: 20px;
+}
+
+#btn{
+	margin-bottom: 50px;
+}
+
+.presentation{
+	width: 250px;
+	height:250px;
+	border-radius:4px;
+	box-shadow: 0 0px 20px lightgrey;
+}
+
+#planet{
+	width: 75px;
+	height:75px;
+	border-radius: 1000px;
+  padding: 12px 24px;
+  box-shadow: 0 0 0 0 skyblue;
+  animation: battement 1.5s infinite cubic-bezier(.66, 0, 0, 1);
+  text-decoration: none;
+}
+
+@keyframes battement {
+  to {
+    box-shadow: 0 0 0 10px rgba(255, 71, 84, 0);
+  }
+}
+
+.presentation {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.presentation:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: filter 1s ease;
+}
+
+.profile{
+	border-radius: 1000px;
+	width:175px;
+	height:175px;
+	margin: 0 auto;
+}
+
+.text {
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 4s steps(100, end);
+  }
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.text {
+	margin-top: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  display: inlin;
+  transition: all 2s ease-out;
+}
+
+.text:hover {
+  transform: scale(1.5);
+}
